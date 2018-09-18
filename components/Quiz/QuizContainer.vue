@@ -1,11 +1,5 @@
 <template>
   <div class="QuizContainer">
-    <div class="QuizContainer-keylayer">
-      <button class="QuizContainer-keylayerYes" v-shortkey="['arrowleft']" @shortkey="handleSelectYes()">←YES
-      </button>
-      <button class="QuizContainer-keylayerNo" v-shortkey="['arrowright']" @shortkey="handleSelectNo()">No→
-      </button>
-    </div>
     <div class="QuizContainer-main">
       <div class="QuizContainer-mainContent">
         <header>
@@ -19,6 +13,14 @@
         </template>
         <p class="QuizContainer-mainDescription" v-html="description"></p>
       </div>
+    </div>
+    <div class="QuizContainer-keylayer">
+      <button class="QuizContainer-keylayerYes" v-shortkey="['arrowleft']" @shortkey="handleSelectYes()"
+              @click="handleSelectYes()">←YES
+      </button>
+      <button class="QuizContainer-keylayerNo" v-shortkey="['arrowright']" @shortkey="handleSelectNo()"
+              @click="handleSelectNo">No→
+      </button>
     </div>
     <div class="QuizContainer-selection">
       <div class="QuizContainer-yes"></div>
@@ -59,10 +61,10 @@
 
   .QuizContainer-keylayer {
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     width: 100%;
     height: 100%;
-    pointer-events: none;
+    /*pointer-events: none;*/
   }
 
   .QuizContainer-keylayerYes, .QuizContainer-keylayerNo {
@@ -91,14 +93,16 @@
   }
 
   .QuizContainer-main {
-    z-index: 1;
+    z-index: 2;
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    width: calc(100% - 40%);
+    max-width: calc(100% - 40%);
     height: 100%;
+    margin: auto;
   }
 
   .QuizContainer-mainContent {
