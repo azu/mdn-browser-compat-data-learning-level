@@ -5,7 +5,7 @@ const store = () => new Vuex.Store({
   modules: {
     MDN: MDN
   },
-  strict: process.env.NODE_ENV !== 'production',
+  strict: false,
 });
 
 export default store

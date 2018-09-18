@@ -19,7 +19,7 @@ export class Walker {
    * @param currentPath
    * @returns {IterableIterator<{ key:string, value: any, currentPath:string}>}
    */
-  * walk(data, currentPath = "/") {
+  * walk(data, currentPath = "") {
     if (!data) {
       return;
     }
@@ -31,7 +31,7 @@ export class Walker {
       if (value && value.status && value.status.standard_track) {
         yield { key, value, currentPath }
       } else {
-        yield* this.walk(value, `${currentPath}/${key}/`);
+        yield* this.walk(value, `${currentPath}/${key}`);
       }
     }
   }
