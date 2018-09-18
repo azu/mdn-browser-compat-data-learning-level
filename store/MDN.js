@@ -121,9 +121,9 @@ export const getters = {
       }
     });
     return `
-Answer: ${viewCount}/${totalCount}(${formatPercent(viewCount, totalCount)})
+Answer:${viewCount}/${totalCount}(${formatPercent(viewCount, totalCount)})
 ${itemsByName.map(result => {
-      return `${result.name}: ${result.yesItems.length}/${result.totalItems.length}(${formatPercent(result.yesItems.length, result.totalItems.length)})`
+      return `${result.name}:${result.yesItems.length}/${result.totalItems.length}(${formatPercent(result.yesItems.length, result.totalItems.length)})`
     }).join("\n")}
     `.trim();
   }
