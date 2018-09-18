@@ -2,9 +2,6 @@
 "use strict";
 
 export class Walker {
-  constructor() {
-    this.IGNORE_PATTERN = /^\__/
-  }
 
   countItems(data) {
     let count = 0;

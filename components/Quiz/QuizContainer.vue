@@ -1,11 +1,16 @@
 <template>
   <div class="QuizContainer">
     <div class="QuizContainer-keylayer">
-      <button class="QuizContainer-keylayerYes" v-shortkey="['arrowleft']" @shortkey="handleSelectYes()">←YES</button>
-      <button class="QuizContainer-keylayerNo" v-shortkey="['arrowright']" @shortkey="handleSelectNo()">No→</button>
+      <button class="QuizContainer-keylayerYes" v-shortkey="['arrowleft']" @shortkey="handleSelectYes()">←YES
+      </button>
+      <button class="QuizContainer-keylayerNo" v-shortkey="['arrowright']" @shortkey="handleSelectNo()">No→
+      </button>
     </div>
     <div class="QuizContainer-main">
       <div class="QuizContainer-mainContent">
+        <header>
+          <h2 class="QuizContainer-mainCategory">{{category}}</h2>
+        </header>
         <template v-if="mdnUrl">
           <h1 class="QuizContainer-mainTitle"><a :href=mdnUrl>{{title}}</a></h1>
         </template>
@@ -27,6 +32,7 @@
     name: "QuizContainer",
     props: {
       title: String,
+      category: String,
       description: String,
       mdnUrl: String,
       onSelectYes: Function,
@@ -56,6 +62,7 @@
     z-index: 2;
     width: 100%;
     height: 100%;
+    pointer-events: none;
   }
 
   .QuizContainer-keylayerYes, .QuizContainer-keylayerNo {
@@ -76,6 +83,11 @@
   .QuizContainer-keylayerNo {
     top: 0;
     right: 0;
+  }
+
+  .QuizContainer-mainCategory {
+    text-align: center;
+    color: rgba(16, 16, 16, 0.80);
   }
 
   .QuizContainer-main {
@@ -99,6 +111,7 @@
   .QuizContainer-mainTitle {
     text-align: center;
     font-size: 32px;
+    padding: 8px;
   }
 
   .QuizContainer-mainTitle, .QuizContainer-mainTitle > a {

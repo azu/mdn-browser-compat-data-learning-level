@@ -1,5 +1,9 @@
 <template>
   <section class="container">
+
+    <a href="https://github.com/azu/mdn-browser-compat-data-learning-level"><img
+      style="position: absolute; top: 0; right: 0; border: 0; z-index: 10;"
+      src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
     <header class="App-header">
       <h1>Do you know this API?</h1>
       <p>
@@ -10,6 +14,7 @@
     </header>
     <quiz-container class="App-QuizContainer"
                     :title="currentItem.name"
+                    :category="currentItem.category"
                     :mdn-url="currentItem.mdn_url"
                     :description="currentItem.description"
                     :on-select-yes="onSelectYes"

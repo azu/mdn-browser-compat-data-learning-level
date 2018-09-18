@@ -34,7 +34,7 @@ export const actions = {
     commit(types.answerItem, { path, selection })
   },
   [types.initialItem]: ({ dispatch }) => {
-    return dispatch(types.nextItem)
+    // return dispatch(types.nextItem)
   },
   [types.nextItem]: ({ commit, state }, { path } = {}) => {
     // if it is ended, loop to first
