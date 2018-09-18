@@ -3,11 +3,11 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'mdn-browser-compat-data-learning-level',
+    title: 'Do you know MDN APIs?',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Test your learning level.' }
+      { hid: 'description', name: 'description', content: 'Test your learning level by MDN API data.' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
