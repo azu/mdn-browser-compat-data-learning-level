@@ -6,7 +6,7 @@ This tools use [mdn/browser-compat-data](https://github.com/mdn).
 
 ## Usage
 
-1. Open <Open https://mdn-browser-compat-data-learning-level.netlify.com/>
+1. Open <https://mdn-browser-compat-data-learning-level.netlify.com/>
 2. If you have know the API, select Yes(Press ← key) else if select No(Press → key)
 3. Show results
 
