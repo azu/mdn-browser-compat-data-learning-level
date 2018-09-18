@@ -84,7 +84,7 @@ export const mutations = {
 };
 
 const formatPercent = (child, parent) => {
-  return Math.round((child / parent) * 100) + "%";
+  return Math.ceil((child / parent) * 100) + "%";
 };
 export const getters = {
   currentItem: (state) => state.currentItem,
