@@ -1,5 +1,7 @@
 // MIT © 2018 azu
 
+import { CategoryName } from "./Walker/mdn-util.js";
+
 export const state = {
   /**
    * [{
@@ -12,7 +14,7 @@ export const state = {
    */
   mdn: {},
   /**
-   * { path: { selection: "yes" | "no" } }
+   * [{ path: String ,selection: "yes" | "no" }]
    */
   viewItems: [],
   currentItem: {},
@@ -81,6 +83,9 @@ export const mutations = {
   }
 };
 
+const formatPercent = (child, parent) => {
+  return Math.round((child / parent) * 100) + "%";
+};
 export const getters = {
   currentItem: (state) => state.currentItem,
   currentPath: (state) => {
@@ -100,5 +105,26 @@ export const getters = {
   },
   totalItemCount: (state) => {
     return state.mdn.length;
+  },
+  formattedResults: (state) => {
+    const viewCount = state.viewItems.length;
+    const totalCount = state.mdn.length;
+    const itemsByName = CategoryName.map(name => {
+      const lowerName = name.toLowerCase();
+      const totalItems = state.mdn.filter(item => item.path.startsWith(`/${lowerName}`));
+      const yesItems = state.viewItems.filter(item => item.path.startsWith(`/${lowerName}`))
+        .filter(item => item.selection === "yes");
+      return {
+        name,
+        totalItems: totalItems,
+        yesItems
+      }
+    });
+    return `
+Answer: ${viewCount}/${totalCount}(${formatPercent(viewCount, totalCount)})
+${itemsByName.map(result => {
+      return `${result.name}: ${result.yesItems.length}/${result.totalItems.length}(${formatPercent(result.yesItems.length, result.totalItems.length)})`
+    }).join("\n")}
+    `.trim();
   }
 };

@@ -15,10 +15,12 @@
       </div>
     </div>
     <div class="QuizContainer-keylayer">
-      <button class="QuizContainer-keylayerYes" v-shortkey="['arrowleft']" @shortkey="handleSelectYes()"
+      <button type="button"
+              class="QuizContainer-keylayerYes" v-shortkey="['arrowleft']" @shortkey="handleSelectYes()"
               @click="handleSelectYes()">←YES
       </button>
-      <button class="QuizContainer-keylayerNo" v-shortkey="['arrowright']" @shortkey="handleSelectNo()"
+      <button type="button"
+              class="QuizContainer-keylayerNo" v-shortkey="['arrowright']" @shortkey="handleSelectNo()"
               @click="handleSelectNo">No→
       </button>
     </div>

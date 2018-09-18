@@ -3,7 +3,7 @@
 import { Walker } from "./Walker.js";
 
 // https://github.com/mdn/browser-compat-data#repository-contents
-const CategoryName = [
+export const CategoryName = [
   "API",
   "CSS",
   "HTML",
