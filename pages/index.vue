@@ -81,8 +81,10 @@ ${results}`;
       },
       copyResuls() {
         const results = this.formattedResults;
-        copy(results);
-        alert("Copied!" + "\n" + results);
+        const responseRate = this.responseRate;
+        const text = responseRate + "\n" + results;
+        copy(text);
+        alert("Copied!" + "\n" + text);
       }
     },
     computed: {
@@ -93,7 +95,8 @@ ${results}`;
         "viewedItemCount",
         "viewedNoItemCount",
         "viewedYesItemCount",
-        "formattedResults"
+        "formattedResults",
+        "responseRate"
       ])
     }
   }

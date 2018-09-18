@@ -106,6 +106,11 @@ export const getters = {
   totalItemCount: (state) => {
     return state.mdn.length;
   },
+  responseRate: (state) => {
+    const viewCount = state.viewItems.length;
+    const totalCount = state.mdn.length;
+    return `Response Rate:${viewCount}/${totalCount}(${formatPercent(viewCount, totalCount)})`;
+  },
   formattedResults: (state) => {
     const viewCount = state.viewItems.length;
     const totalCount = state.mdn.length;
@@ -120,8 +125,9 @@ export const getters = {
         yesItems
       }
     });
+    const allYes = state.viewItems.filter(item => item.selection === "yes");
     return `
-Answer:${viewCount}/${totalCount}(${formatPercent(viewCount, totalCount)})
+All:${allYes.length}/${totalCount}(${formatPercent(allYes.length, totalCount)})
 ${itemsByName.map(result => {
       return `${result.name}:${result.yesItems.length}/${result.totalItems.length}(${formatPercent(result.yesItems.length, result.totalItems.length)})`
     }).join("\n")}
