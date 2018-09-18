@@ -21,7 +21,7 @@
 
 <script>
   import QuizContainer from "../components/Quiz/QuizContainer"
-  import { mapGetters, mapActions } from 'vuex'
+  import { mapGetters } from 'vuex'
   import { types } from '../store/MDN.js'
   import { toArray } from "../store/Walker/mdn-util.js";
 
@@ -36,7 +36,13 @@
       }
     },
     mounted: function() {
-      this.$store.dispatch(types.initialItem);
+      const currentPath = this.$store.getters.currentPath;
+      console.log("currentPath", currentPath);
+      if (!currentPath) {
+        this.$store.dispatch(types.initialItem);
+      } else {
+        this.$store.dispatch(types.setCurrentItem, { path: currentPath })
+      }
     },
     methods: {
       onSelectYes() {

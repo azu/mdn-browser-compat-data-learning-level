@@ -54,6 +54,13 @@ export const actions = {
       return commit(types.setCurrentItem, { item: firstItem });
     }
     return commit(types.setCurrentItem, { item: nextItem });
+  },
+  [types.setCurrentItem]: ({ commit, state }, { path } = {}) => {
+    const currentItem = state.mdn.find(item => item.path === path);
+    if (!currentItem) {
+      return;
+    }
+    return commit(types.setCurrentItem, { item: currentItem });
   }
 };
 
@@ -78,7 +85,7 @@ export const getters = {
   currentItem: (state) => state.currentItem,
   currentPath: (state) => {
     if (!state.currentItem) {
-      return "";
+      return undefined;
     }
     return state.currentItem.path;
   },
