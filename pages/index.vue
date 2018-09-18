@@ -80,7 +80,9 @@ ${results}`;
         window.open(shareURL, "_blank");
       },
       copyResuls() {
-        copy(this.formattedResults);
+        const results = this.formattedResults;
+        copy(results);
+        alert("Copied!" + "\n" + results);
       }
     },
     computed: {
