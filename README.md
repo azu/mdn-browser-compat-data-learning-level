@@ -1,4 +1,4 @@
-# mdn-browser-compat-data-learning-level
+# mdn-browser-compat-data-learning-level [![Build Status](https://travis-ci.org/azu/mdn-browser-compat-data-learning-level.svg?branch=master)](https://travis-ci.org/azu/mdn-browser-compat-data-learning-level)
 
 > Test your learning level.
 
