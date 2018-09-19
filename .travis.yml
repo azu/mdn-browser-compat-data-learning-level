@@ -2,3 +2,6 @@ sudo: false
 language: node_js
 node_js:
 - stable
+script:
+  - yarn test
+  - if [ "${TRAVIS_EVENT_TYPE}" = "cron" ]; then curl -X POST -d '' $NETLIFY_BUILD_API; fi
