@@ -596,9 +596,9 @@
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
 
-"@nuxt/babel-preset-app@2.3.2":
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/@nuxt/babel-preset-app/-/babel-preset-app-2.3.2.tgz#93c6e76f7b95a1510d2812339f59efaaf6bc4729"
+"@nuxt/babel-preset-app@2.3.4":
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/@nuxt/babel-preset-app/-/babel-preset-app-2.3.4.tgz#e8ef218a8ce58f854aa3c822bd5ebcb7c3d1c917"
   dependencies:
     "@babel/core" "^7.1.6"
     "@babel/plugin-proposal-class-properties" "^7.1.0"
@@ -611,12 +611,12 @@
     babel-helper-vue-jsx-merge-props "^2.0.3"
     babel-plugin-transform-vue-jsx "^4.0.1"
 
-"@nuxt/builder@2.3.2":
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/@nuxt/builder/-/builder-2.3.2.tgz#52b0dd9798542079706866a94a81f7df214700fe"
+"@nuxt/builder@2.3.4":
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/@nuxt/builder/-/builder-2.3.4.tgz#38b0077d873969399c244241542fa4a89f2b7a24"
   dependencies:
-    "@nuxt/common" "2.3.2"
-    "@nuxt/vue-app" "2.3.2"
+    "@nuxt/common" "2.3.4"
+    "@nuxt/vue-app" "2.3.4"
     "@nuxtjs/devalue" "^1.1.0"
     chokidar "^2.0.4"
     consola "^2.3.0"
@@ -628,11 +628,11 @@
     serialize-javascript "^1.5.0"
     upath "^1.1.0"
 
-"@nuxt/cli@2.3.2":
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/@nuxt/cli/-/cli-2.3.2.tgz#0a8553477c9699f11d4439463993e774aca5d319"
+"@nuxt/cli@2.3.4":
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/@nuxt/cli/-/cli-2.3.4.tgz#eba1841d795a54ede8f0587d7a9d13e9780a458e"
   dependencies:
-    "@nuxt/config" "2.3.2"
+    "@nuxt/config" "2.3.4"
     boxen "^2.0.0"
     chalk "^2.4.1"
     consola "^2.3.0"
@@ -642,41 +642,37 @@
     std-env "^2.2.1"
     wrap-ansi "^4.0.0"
 
-"@nuxt/common@2.3.2":
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/@nuxt/common/-/common-2.3.2.tgz#da0d7a6278a3e773c21917d0ecf1eb45c1ef8f7c"
+"@nuxt/common@2.3.4":
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/@nuxt/common/-/common-2.3.4.tgz#04b95e640b66a7dbb9c3e5979071180a5c13797b"
   dependencies:
     consola "^2.3.0"
-    lodash "^4.17.11"
 
-"@nuxt/config@2.3.2":
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/@nuxt/config/-/config-2.3.2.tgz#28ea9f5a496a34094de873984ee0879f5af529ab"
+"@nuxt/config@2.3.4":
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/@nuxt/config/-/config-2.3.4.tgz#59989d252cc968667ddd1d1956958f817445c217"
   dependencies:
-    "@nuxt/common" "2.3.2"
+    "@nuxt/common" "2.3.4"
     consola "^2.3.0"
-    lodash "^4.17.11"
     std-env "^2.2.1"
 
-"@nuxt/core@2.3.2":
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/@nuxt/core/-/core-2.3.2.tgz#25d89b7528fbdca1bf1e697f638a864ebf4a1126"
+"@nuxt/core@2.3.4":
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/@nuxt/core/-/core-2.3.4.tgz#bb09deb1fb178e7d3e74f58500858d1e2faf5b47"
   dependencies:
-    "@nuxt/common" "2.3.2"
-    "@nuxt/config" "2.3.2"
-    "@nuxt/server" "2.3.2"
-    "@nuxt/vue-renderer" "2.3.2"
+    "@nuxt/common" "2.3.4"
+    "@nuxt/config" "2.3.4"
+    "@nuxt/server" "2.3.4"
+    "@nuxt/vue-renderer" "2.3.4"
     "@nuxtjs/devalue" "^1.1.0"
-    "@nuxtjs/opencollective" "^0.1.0"
     consola "^2.3.0"
     debug "^4.1.0"
     esm "^3.0.84"
     fs-extra "^7.0.1"
     hash-sum "^1.0.2"
-    lodash "^4.17.11"
     std-env "^2.2.1"
 
-"@nuxt/friendly-errors-webpack-plugin@^2.3.0":
+"@nuxt/friendly-errors-webpack-plugin@^2.3.2":
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/@nuxt/friendly-errors-webpack-plugin/-/friendly-errors-webpack-plugin-2.3.2.tgz#eb2c49b99d4f09ebdd635410b669b0700c2746f3"
   dependencies:
@@ -685,22 +681,22 @@
     error-stack-parser "^2.0.0"
     string-width "^2.0.0"
 
-"@nuxt/generator@2.3.2":
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/@nuxt/generator/-/generator-2.3.2.tgz#b08e0c1b8ba7c81809fb88e9c98fb5e8e6efe251"
+"@nuxt/generator@2.3.4":
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/@nuxt/generator/-/generator-2.3.4.tgz#d2b09cde5b29cfe3770d3df13e48155c780fb600"
   dependencies:
-    "@nuxt/common" "2.3.2"
+    "@nuxt/common" "2.3.4"
     chalk "^2.4.1"
     consola "^2.3.0"
     fs-extra "^7.0.1"
     html-minifier "^3.5.21"
 
-"@nuxt/server@2.3.2":
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/@nuxt/server/-/server-2.3.2.tgz#8fc6acf214120232dead2e2ce8baa23dffd28a4f"
+"@nuxt/server@2.3.4":
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/@nuxt/server/-/server-2.3.4.tgz#f83314467c9024ca0535e92532ab38e045921eee"
   dependencies:
-    "@nuxt/common" "2.3.2"
-    "@nuxt/config" "2.3.2"
+    "@nuxt/common" "2.3.4"
+    "@nuxt/config" "2.3.4"
     "@nuxtjs/youch" "^4.2.3"
     browserslist-useragent "^2.0.1"
     chalk "^2.4.1"
@@ -717,39 +713,39 @@
     serve-static "^1.13.2"
     server-destroy "^1.0.1"
 
-"@nuxt/vue-app@2.3.2":
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/@nuxt/vue-app/-/vue-app-2.3.2.tgz#42340b33f420de83794ca8a6c9d138a0b66701bd"
+"@nuxt/vue-app@2.3.4":
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/@nuxt/vue-app/-/vue-app-2.3.4.tgz#ca30b4e47ab96c73685410f7b0ce44a1781ad225"
 
-"@nuxt/vue-renderer@2.3.2":
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/@nuxt/vue-renderer/-/vue-renderer-2.3.2.tgz#b153fd0c9ad969baaa02a6b916ef2c4a32b9d7a4"
+"@nuxt/vue-renderer@2.3.4":
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/@nuxt/vue-renderer/-/vue-renderer-2.3.4.tgz#176d59d8e2a6a8db6e68ea3418a042c548535303"
   dependencies:
-    "@nuxt/common" "2.3.2"
+    "@nuxt/common" "2.3.4"
     "@nuxtjs/devalue" "^1.1.0"
     consola "^2.3.0"
     fs-extra "^7.0.1"
     lru-cache "^4.1.3"
     vue "^2.5.17"
-    vue-meta "^1.5.5"
+    vue-meta "^1.5.6"
     vue-no-ssr "^1.1.0"
-    vue-router "^3.0.1"
+    vue-router "^3.0.2"
     vue-server-renderer "^2.5.17"
     vue-template-compiler "^2.5.17"
     vuex "^3.0.1"
 
-"@nuxt/webpack@2.3.2":
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/@nuxt/webpack/-/webpack-2.3.2.tgz#71df2876485ab1d195938fb09afd862a5fbf1b84"
+"@nuxt/webpack@2.3.4":
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/@nuxt/webpack/-/webpack-2.3.4.tgz#08bdcb79432ac86e32b216328750731df2170b69"
   dependencies:
     "@babel/core" "^7.1.6"
     "@babel/polyfill" "^7.0.0"
-    "@nuxt/babel-preset-app" "2.3.2"
-    "@nuxt/common" "2.3.2"
-    "@nuxt/friendly-errors-webpack-plugin" "^2.3.0"
+    "@nuxt/babel-preset-app" "2.3.4"
+    "@nuxt/common" "2.3.4"
+    "@nuxt/friendly-errors-webpack-plugin" "^2.3.2"
     babel-loader "^8.0.4"
     cache-loader "^1.2.5"
-    caniuse-lite "^1.0.30000909"
+    caniuse-lite "^1.0.30000910"
     chalk "^2.4.1"
     consola "^2.3.0"
     css-loader "^1.0.1"
@@ -759,9 +755,8 @@
     glob "^7.1.3"
     hash-sum "^1.0.2"
     html-webpack-plugin "^3.2.0"
-    lodash "^4.17.11"
     memory-fs "^0.4.1"
-    mini-css-extract-plugin "^0.4.4"
+    mini-css-extract-plugin "^0.4.5"
     optimize-css-assets-webpack-plugin "^5.0.1"
     pify "^4.0.1"
     postcss "^7.0.6"
@@ -777,7 +772,7 @@
     time-fix-plugin "^2.0.5"
     url-loader "^1.1.2"
     vue-loader "^15.4.2"
-    webpack "^4.26.0"
+    webpack "^4.26.1"
     webpack-bundle-analyzer "^3.0.3"
     webpack-dev-middleware "^3.4.0"
     webpack-hot-middleware "^2.24.3"
@@ -790,14 +785,13 @@
   dependencies:
     consola "^2.0.7"
 
-"@nuxtjs/opencollective@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/opencollective/-/opencollective-0.1.0.tgz#5dfb10b2148ce77e9590bca9b9ed6e71d2a500eb"
+"@nuxtjs/opencollective@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/opencollective/-/opencollective-0.2.0.tgz#2badff33d6fd2dcd5dc5ce95e2171c8095f12d25"
   dependencies:
     chalk "^2.4.1"
-    consola "^1.4.3"
-    esm "^3.0.79"
-    node-fetch "^2.2.0"
+    consola "^2.3.0"
+    node-fetch "^2.3.0"
 
 "@nuxtjs/youch@^4.2.3":
   version "4.2.3"
@@ -1724,9 +1718,13 @@ caniuse-api@^3.0.0:
     lodash.memoize "^4.1.2"
     lodash.uniq "^4.5.0"
 
-caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000898, caniuse-lite@^1.0.30000899, caniuse-lite@^1.0.30000905, caniuse-lite@^1.0.30000909:
+caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000898, caniuse-lite@^1.0.30000899, caniuse-lite@^1.0.30000905:
   version "1.0.30000910"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000910.tgz#755d5181d4b006e5a2b59b1ffa05d0a0470039f5"
+
+caniuse-lite@^1.0.30000910:
+  version "1.0.30000912"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000912.tgz#08e650d4090a9c0ab06bfd2b46b7d3ad6dcaea28"
 
 capture-exit@^1.2.0:
   version "1.2.0"
@@ -1971,15 +1969,6 @@ connect@^3.6.6:
     finalhandler "1.1.0"
     parseurl "~1.3.2"
     utils-merge "1.0.1"
-
-consola@^1.4.3:
-  version "1.4.5"
-  resolved "https://registry.yarnpkg.com/consola/-/consola-1.4.5.tgz#09732d07cb50af07332e54e0f42fafb92b962c4a"
-  dependencies:
-    chalk "^2.3.2"
-    figures "^2.0.0"
-    lodash "^4.17.5"
-    std-env "^1.1.0"
 
 consola@^2.0.0-1, consola@^2.0.7, consola@^2.2.4, consola@^2.3.0:
   version "2.3.0"
@@ -2392,7 +2381,7 @@ deep-is@~0.1.3:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/deep-is/-/deep-is-0.1.3.tgz#b369d6fb5dbc13eecf524f91b070feedc357cf34"
 
-deepmerge@^2.0.0, deepmerge@^2.1.0:
+deepmerge@^2.1.0, deepmerge@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-2.2.1.tgz#5d3ff22a01c00f645405a2fbc17d0778a1801170"
 
@@ -2776,7 +2765,7 @@ eslint@^5.6.0:
     table "^5.0.2"
     text-table "^0.2.0"
 
-esm@^3.0.79, esm@^3.0.84:
+esm@^3.0.84:
   version "3.0.84"
   resolved "https://registry.yarnpkg.com/esm/-/esm-3.0.84.tgz#bb108989f4673b32d4f62406869c28eed3815a63"
 
@@ -3709,7 +3698,7 @@ is-callable@^1.1.3, is-callable@^1.1.4:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/is-callable/-/is-callable-1.1.4.tgz#1e1adf219e1eeb684d691f9d6a05ff0d30a24d75"
 
-is-ci@^1.0.10, is-ci@^1.1.0:
+is-ci@^1.0.10:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/is-ci/-/is-ci-1.2.1.tgz#e3779c8ee17fccf428488f6e281187f2e632841c"
   dependencies:
@@ -4665,7 +4654,7 @@ mimic-fn@^1.0.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-1.2.0.tgz#820c86a39334640e99516928bd03fca88057d022"
 
-mini-css-extract-plugin@^0.4.4:
+mini-css-extract-plugin@^0.4.5:
   version "0.4.5"
   resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-0.4.5.tgz#c99e9e78d54f3fa775633aee5933aeaa4e80719a"
   dependencies:
@@ -4833,7 +4822,7 @@ no-case@^2.2.0:
   dependencies:
     lower-case "^1.1.1"
 
-node-fetch@^2.2.0:
+node-fetch@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.3.0.tgz#1a1d940bbfb916a1d3e0219f037e89e71f8c5fa5"
 
@@ -4969,16 +4958,17 @@ number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
 
-nuxt@^2.3.2:
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-2.3.2.tgz#5273f85212482d4f23ec7bbd1b0e7e18a1d8e423"
+nuxt@^2.3.4:
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-2.3.4.tgz#61f5fe856ebbeced89f04a3734baa4ee91cc3cfa"
   dependencies:
-    "@nuxt/builder" "2.3.2"
-    "@nuxt/cli" "2.3.2"
-    "@nuxt/common" "2.3.2"
-    "@nuxt/core" "2.3.2"
-    "@nuxt/generator" "2.3.2"
-    "@nuxt/webpack" "2.3.2"
+    "@nuxt/builder" "2.3.4"
+    "@nuxt/cli" "2.3.4"
+    "@nuxt/common" "2.3.4"
+    "@nuxt/core" "2.3.4"
+    "@nuxt/generator" "2.3.4"
+    "@nuxt/webpack" "2.3.4"
+    "@nuxtjs/opencollective" "^0.2.0"
 
 "nwmatcher@>= 1.3.9 < 2.0.0":
   version "1.4.4"
@@ -6709,12 +6699,6 @@ statuses@~1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-1.4.0.tgz#bb73d446da2796106efcc1b601a253d6c46bd087"
 
-std-env@^1.1.0:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/std-env/-/std-env-1.3.1.tgz#4e1758412439e9ece1d437b1b098551911aa44ee"
-  dependencies:
-    is-ci "^1.1.0"
-
 std-env@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/std-env/-/std-env-2.2.1.tgz#2ffa0fdc9e2263e0004c1211966e960948a40f6b"
@@ -7300,11 +7284,11 @@ vue-loader@^15.4.2:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
-vue-meta@^1.5.5:
-  version "1.5.5"
-  resolved "https://registry.yarnpkg.com/vue-meta/-/vue-meta-1.5.5.tgz#e24a5fea3a0c11b67c85947f0a7ee3f3edcbc01d"
+vue-meta@^1.5.6:
+  version "1.5.6"
+  resolved "https://registry.yarnpkg.com/vue-meta/-/vue-meta-1.5.6.tgz#8c6e56e560217c63637bb9ed66434df15c162057"
   dependencies:
-    deepmerge "^2.0.0"
+    deepmerge "^2.2.1"
     lodash.isplainobject "^4.0.6"
     object-assign "^4.1.1"
 
@@ -7312,7 +7296,7 @@ vue-no-ssr@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/vue-no-ssr/-/vue-no-ssr-1.1.0.tgz#b323807112f676324d9d7cfde85d7831ced11dd9"
 
-vue-router@^3.0.1:
+vue-router@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.0.2.tgz#dedc67afe6c4e2bc25682c8b1c2a8c0d7c7e56be"
 
@@ -7450,9 +7434,9 @@ webpack-sources@^1.1.0, webpack-sources@^1.3.0:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
 
-webpack@^4.26.0:
-  version "4.26.0"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.26.0.tgz#adbe80b869148c8d108b7d88965d00d72b3178de"
+webpack@^4.26.1:
+  version "4.26.1"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.26.1.tgz#ff3a9283d363c07b3494dfa702d08f4f2ef6cb39"
   dependencies:
     "@webassemblyjs/ast" "1.7.11"
     "@webassemblyjs/helper-module-context" "1.7.11"
