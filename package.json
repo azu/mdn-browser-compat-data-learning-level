@@ -19,7 +19,7 @@
   "dependencies": {
     "@types/node": "^10.12.15",
     "clipboard-copy": "^2.0.1",
-    "keypather": "^3.0.0",
+    "keypather": "^3.1.0",
     "mdn-browser-compat-data": "^0.0.51",
     "nuxt": "^2.3.4",
     "vue-shortkey": "^3.1.6",
