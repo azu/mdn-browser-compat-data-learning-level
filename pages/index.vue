@@ -130,7 +130,6 @@ ${results}`;
 
   .App-headerShareButton {
     border-radius: 3px;
-    box-shadow: 0 3px 0 rgba(136, 136, 136, 1);
     color: #066370;
     font-size: 16px;
     font-weight: bold;

@@ -112,11 +112,12 @@
     background-color: rgba(255, 255, 255, 0.8);
     min-width: 40em;
     min-height: 5em;
+    max-width: 1vw;
+    font-size: 32px;
   }
 
   .QuizContainer-mainTitle {
     text-align: center;
-    font-size: 32px;
     padding: 8px;
   }
 
@@ -141,4 +142,17 @@
     color: #fff;
     background-color: #d57264;
   }
+
+  @media (max-width: 480px) {
+    .QuizContainer-main {
+      width: 100%;
+      max-width: 100%
+    }
+
+    .QuizContainer-mainContent {
+      font-size: 18px;
+      font-size: 3.5vw;
+    }
+  }
+
 </style>
