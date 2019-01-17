@@ -77,6 +77,8 @@
     border: none;
     font-size: 48px;
     color: #fff;
+    /* disable tap zoom*/
+    touch-action: none;
   }
 
   .QuizContainer-keylayerYes {
