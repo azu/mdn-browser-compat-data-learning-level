@@ -144,11 +144,6 @@
   }
 
   @media (max-width: 480px) {
-    .QuizContainer-main {
-      width: 100%;
-      max-width: 100%
-    }
-
     .QuizContainer-mainContent {
       font-size: 18px;
       font-size: 3.5vw;
