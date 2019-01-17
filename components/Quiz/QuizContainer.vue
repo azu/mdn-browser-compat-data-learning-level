@@ -6,7 +6,7 @@
           <h2 class="QuizContainer-mainCategory">{{category}}</h2>
         </header>
         <template v-if="mdnUrl">
-          <h1 class="QuizContainer-mainTitle"><a :href=mdnUrl>{{title}}</a></h1>
+          <h1 class="QuizContainer-mainTitle"><a :href=mdnUrl target="_blank">{{title}}</a></h1>
         </template>
         <template v-else>
           <h1 class="QuizContainer-mainTitle">{{title}}</h1>
