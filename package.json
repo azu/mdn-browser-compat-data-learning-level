@@ -17,7 +17,7 @@
     "test": "mocha \"store/**/__tests__/*\""
   },
   "dependencies": {
-    "@types/node": "^10.12.21",
+    "@types/node": "^10.12.24",
     "clipboard-copy": "^2.0.1",
     "keypather": "^3.1.0",
     "mdn-browser-compat-data": "^0.0.66",
