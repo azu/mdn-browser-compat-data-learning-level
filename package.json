@@ -20,7 +20,7 @@
     "@types/node": "^10.14.13",
     "clipboard-copy": "^2.0.1",
     "keypather": "^3.1.0",
-    "mdn-browser-compat-data": "^0.0.86",
+    "mdn-browser-compat-data": "^0.0.87",
     "nuxt": "^2.8.1",
     "vue-shortkey": "^3.1.7",
     "vuex": "^3.1.1",
