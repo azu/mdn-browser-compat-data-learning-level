@@ -7688,7 +7688,7 @@ vue@^2.6.10:
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
   integrity sha512-ImThpeNU9HbdZL3utgMCq0oiMzAkt1mcgy3/E6zWC/G6AaQoeuFdsl9nDhTDU3X1R6FK7nsIUuRACVcjI+A2GQ==
 
-vuex-persistedstate@^2.5.4:
+vuex-persistedstate@^2.6.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/vuex-persistedstate/-/vuex-persistedstate-2.6.0.tgz#d39dfac7b026a6e06e9c7ac5f215ddd37c0b3adb"
   integrity sha512-xS1uBVW0Hkl2GNERRS7LrQDXMVkf1hFFCEnYqgYVwzU5NGZhmXSoIdp9vSY3k7dK5CzJjLyJC1ToQzUwt/ujmA==
