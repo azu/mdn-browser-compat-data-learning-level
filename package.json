@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@types/node": "^10.17.13",
-    "clipboard-copy": "^2.0.1",
+    "clipboard-copy": "^3.1.0",
     "keypather": "^3.1.0",
     "mdn-browser-compat-data": "^0.0.99",
     "nuxt": "^2.11.0",
